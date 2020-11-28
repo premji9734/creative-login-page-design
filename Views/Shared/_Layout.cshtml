@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/App_Data/" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <style>
+        .loginbox {
+           
+            width: 330px;
+            height: 420px;
+            background:#000;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            box-shadow: 10px 10px 10px #888888;
+            border-radius: 10px;
+            padding:30px 30px;
+        }
+        .avtar{
+            width:80px;
+            height:80px;
+            border-radius:50%;
+            position:absolute;
+           top:-45px;
+           left:120px;
+            left:calc(50% -50%);
+        }
+        .my{
+            margin:5px;
+            padding:5px;
+            text-align:center;
+            font-size:29px;
+        }
+        p {
+            margin: 0px;
+            padding:0px;
+            text-align:initial;
+            font-size: 19px;
+        }
+        
+        .loginbox a {
+           
+           
+            color: darkgray;
+        }
+        .loginbox input[type="submit"] {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #fb2525;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 15px;
+        }
+        .loginbox input[type="text"], input[type="password"] {
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+            background: transparent;
+        }
+        .loginbox p{
+            margin:0px;
+            padding:0px;
+            font-weight:bold;
+
+        }
+        .loginbox input{
+            width:100%;
+            padding:10px;
+            margin:5px;
+            margin-left:5px;
+            margin-bottom:20px;
+        }
+    </style>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
